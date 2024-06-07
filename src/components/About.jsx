@@ -1,6 +1,7 @@
 import avatar from "../assets/avatar.png";
 import CIcon from '@coreui/icons-react';
 import * as icon from '@coreui/icons';
+import React from 'react';
 
 const openLink = (source) => {
     window.open(source, '_blank');
