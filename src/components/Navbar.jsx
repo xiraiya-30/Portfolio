@@ -60,20 +60,20 @@ export default function TabsCustomAnimation() {
           </TabPanel>
         ))}
       </TabsBody>
-      <div className="flex justify-center relative z-40">
+      <div className="flex justify-center relative z-50">
 
-      <div className="absolute bottom-0 size-auto mb-4 rounded-xl bg-white bg-opacity-40 backdrop-blur-md">
+      <div className="absolute bottom-0 size-auto mb-4  rounded-xl md:w-[95vw] lg:w-auto bg-white bg-opacity-40 backdrop-blur-md animate-pop-up">
         <TabsHeader
-          className="relative p-0 flex flex-wrap justify-center bg-transparent"
+          className="relative bg-transparent"
           indicatorProps={{
-            className: "shadow-xl rounded-xl ",
+            className: "shadow-xl rounded-xl justify-centre   ",
           }}
 
         >
           {data.map(({ label, value }) => (
             <Tab
               key={value}
-              className="w-full sm:w-40 md:w-60 font-nothing-45 text-center text-base sm:text-sm md:text-lg rounded-xl hover:bg-gray-200 hover:scale-105 hover:bg-opacity-50 hover:shadow-lg m-2 sm:m-3 h-12 sm:h-16"
+              className="w-full sm:w-[11vw] md:w-44 font-nothing-45 text-center text-base sm:text-[9px] md:text-sm rounded-xl lg:hover:bg-gray-200 hover:scale-105 lg:hover:bg-opacity-50 lg:hover:shadow-lg m-2 sm:mx-[14px] h-10 sm:h-10"
               value={value}
             >
               {label}

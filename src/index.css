@@ -7,7 +7,11 @@
     src: url(".\fonts\nothing-font-47.ttf");
   }
 
-  @font-face {
-    font-family: "Nothing-45";
-    src: url(".\fonts\nothing-font-45.ttf");
-  }
+@font-face {
+  font-family: "Nothing-45";
+  src: url(".\fonts\nothing-font-45.ttf");
+}
+
+body {
+  @apply bg-deep-orange-600; /* or any other Tailwind color class */
+}
