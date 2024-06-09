@@ -19,7 +19,7 @@ module.exports = withMT({
       fontFamily: {
         
         'nothing-45': ['Nothing-45'],
-        'nothing-47': ['Nothing-47'],
+        'sans': ['Nothing-47'],
 
       },
 
@@ -27,13 +27,33 @@ module.exports = withMT({
         'pop-up': 'pop-up 1.3s ease-out',
         'pop-down': 'pop-down 1.3s ease-out',
         'pop-left': 'pop-left 1.3s ease-out',
-        
+        'wiggle': 'wiggle 3s infinite' 
       },
       keyframes: {
+        'wiggle': {
+          '0%,100%': {
+            transform: 'translateX(0)',
+            
+          },
+          '50%': {
+            transform: 'translateX(-14%)',
+            
+          },
+          
+          
+        },
         'pop-up': {
           '0%': {
             transform: 'translateY(100%)',
             opacity: '0',
+          },
+          '80%': {
+            transform: 'translateY(-20%)',
+            opacity: '1',
+          },
+          '90%': {
+            transform: 'translateY(10%)',
+            opacity: '1',
           },
           '100%': {
             transform: 'translateY(0)',
@@ -45,6 +65,14 @@ module.exports = withMT({
             transform: 'translateY(-100%)',
             opacity: '0',
           },
+          '80%': {
+            transform: 'translateY(5%)',
+            opacity: '1',
+          },
+          '90%': {
+            transform: 'translateY(-5%)',
+            opacity: '1',
+          },
           '100%': {
             transform: 'translateY(0)',
             opacity: '1',
@@ -54,6 +82,14 @@ module.exports = withMT({
           '0%': {
             transform: 'translateX(-100%)',
             opacity: '0',
+          },
+          '80%': {
+            transform: 'translateX(10%)',
+            opacity: '1',
+          },
+          '90%': {
+            transform: 'translateX(-5%)',
+            opacity: '1',
           },
           '100%': {
             transform: 'translateX(0)',

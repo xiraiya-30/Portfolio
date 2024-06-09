@@ -1,8 +1,9 @@
 import { useState,useEffect } from 'react'
-import About from './components/About'
+import About from './pages/About'
 import Navbar from './components/Navbar'
 import React from 'react';
 import { Loading } from './components/simple components';
+import Skills from './pages/Skills';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +22,8 @@ function App() {
       ) : (
         <Navbar />
       )}
+       
+      
     </>
   )
 }

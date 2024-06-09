@@ -8,7 +8,8 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 
-import About from "./About";
+import About from "../pages/About";
+import Skills from '../pages/Skills';
 
 export default function TabsCustomAnimation() {
 
@@ -21,7 +22,7 @@ export default function TabsCustomAnimation() {
     {
       label: "Skills",
       value: "skills",
-      component: <About />,
+      component: <Skills />,
     },
     {
       label: "Timeline",
@@ -55,25 +56,25 @@ export default function TabsCustomAnimation() {
         }}
       >
         {data.map(({ value, component }) => (
-          <TabPanel key={value} value={value} className="p-0">
+          <TabPanel key={value} value={value} className="p-0 ">
             {component}
           </TabPanel>
         ))}
       </TabsBody>
       <div className="flex justify-center relative z-50">
 
-      <div className="absolute bottom-0 size-auto mb-4  rounded-xl md:w-[95vw] lg:w-auto bg-white bg-opacity-40 backdrop-blur-md animate-pop-up">
+      <div className="bottom-0 size-auto mb-4 fixed rounded-xl md:w-[95vw] lg:w-auto bg-white bg-opacity-40 backdrop-blur-md animate-pop-up">
         <TabsHeader
           className="relative bg-transparent"
           indicatorProps={{
-            className: "shadow-xl rounded-xl justify-centre   ",
+            className: "shadow-xl rounded-xl w-[13vw] -left-1.5  md:w-auto  ",
           }}
 
         >
           {data.map(({ label, value }) => (
             <Tab
               key={value}
-              className="w-full sm:w-[11vw] md:w-44 font-nothing-45 text-center text-base sm:text-[9px] md:text-sm rounded-xl lg:hover:bg-gray-200 hover:scale-105 lg:hover:bg-opacity-50 lg:hover:shadow-lg m-2 sm:mx-[14px] h-10 sm:h-10"
+              className="w-full sm:w-[11vw] md:w-44 font-nothing-45 text-center text-base sm:text-[9px] md:text-sm rounded-xl lg:hover:bg-gray-200 hover:scale-105 lg:hover:bg-opacity-50 lg:hover:shadow-lg m-2 sm:mx-[14px] h-10 "
               value={value}
             >
               {label}

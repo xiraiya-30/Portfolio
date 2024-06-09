@@ -6,4 +6,8 @@ export default defineConfig({
   
   plugins: [react()],
   base: "/Portfolio",
+  server:{
+    host:true,
+    open:'/index.html',
+  }
 })
