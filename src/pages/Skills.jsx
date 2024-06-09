@@ -227,7 +227,6 @@ const CustIcon = ({ iconName , tooltip_content }) => {
         <Tooltip content={tooltip_content} placement="bottom">
             <CIcon icon={icon[iconName]} className={reacticonstyle() } color="#000000" />
         </Tooltip>
-``
         </div>
     );
 };
