@@ -136,9 +136,9 @@ export default function Skills() {
             <CgPacman className="size-10 opacity-85" color="#ffffff"/>
             <h1 className="text-white  text-3xl p-4 my-1">Languages</h1>
             </div>
-            <div className="flex ajustify-center flex-wrap ">
+            <div className="flex justify-center flex-wrap ">
                 {languages.map(({label,value}) => 
-                    (<CustIcon iconName={value} tooltip_content={label} />
+                    (<CustIcon key={value} iconName={value} tooltip_content={label} />
                         )) }
 
             </div>
@@ -155,7 +155,7 @@ export default function Skills() {
             <div className="flex px-5 justify-center flex-wrap">
                 
                 {frameworks.map(({label,value}) => (
-                    <Tooltip content={label} placement="bottom">
+                    <Tooltip key={value} content={label} placement="bottom">
                         <div className="flex">
                             {value }
                         </div>
@@ -175,7 +175,7 @@ export default function Skills() {
             <div className="flex px-5 justify-center flex-wrap">
                 
                 {tools.map(({label,value}) => (
-                    <Tooltip content={label} placement="bottom">
+                    <Tooltip key={value} content={label} placement="bottom">
                         <div className="flex">
                             {value }
                         </div>
@@ -194,7 +194,7 @@ export default function Skills() {
             <div className="flex px-5 justify-centre flex-wrap ">
                 
                 {backend.map(({label,value}) => (
-                    <Tooltip content={label} placement="bottom">
+                    <Tooltip key={value} content={label} placement="bottom">
                         <div className="flex ">
                             {value }
                         </div>
@@ -227,6 +227,7 @@ const CustIcon = ({ iconName , tooltip_content }) => {
         <Tooltip content={tooltip_content} placement="bottom">
             <CIcon icon={icon[iconName]} className={reacticonstyle() } color="#000000" />
         </Tooltip>
+
         </div>
     );
 };

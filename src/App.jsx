@@ -1,9 +1,8 @@
 import { useState,useEffect } from 'react'
-import About from './pages/About'
-import Navbar from './components/Navbar'
 import React from 'react';
 import { Loading } from './components/simple components';
-import Skills from './pages/Skills';
+import Timelines from './pages/Timelines';
+import Navbar_page from './components/Navbar_page';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,9 +19,10 @@ function App() {
       {isLoading ? (
         <Loading />
       ) : (
-        <Navbar />
+        <Navbar_page />
       )}
-       
+      
+      
       
     </>
   )
