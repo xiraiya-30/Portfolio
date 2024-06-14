@@ -67,8 +67,8 @@ const Contact = () => {
     <div className="flex flex-col w-full justify-center align-middle items-center min-h-screen px-4">
   
     <div className="flex flex-col text-center fixed top-16">
-      <h2 className="lg:text-4xl text-2xl font-black p-3">CONTACT</h2>
-      <p className="font-gray-800 mb-4 text-lg">Message me!</p>
+      <h2 className="lg:text-4xl text-2xl font-black p-3 text-black">CONTACT</h2>
+      <p className="font-gray-800 mb-4 text-lg text-black">Message me!</p>
     </div>
     <div className=' w-4/5 flex justify-center mt-4'>
     
