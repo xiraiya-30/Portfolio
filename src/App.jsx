@@ -1,9 +1,7 @@
 import { useState,useEffect } from 'react'
 import React from 'react';
 import { Loading } from './components/simple components';
-import Timelines from './pages/Timelines';
-import Navbar_page from './components/Navbar_page';
-
+import Contact from './pages/Contact'
 function App() {
   const [count, setCount] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
@@ -16,11 +14,13 @@ function App() {
 
   return (
     <>
-      {isLoading ? (
+      {/* {isLoading ? (
         <Loading />
       ) : (
         <Navbar_page />
-      )}
+      )} */}
+
+      <Contact />
       
       
       

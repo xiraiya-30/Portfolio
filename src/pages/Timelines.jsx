@@ -49,7 +49,13 @@ export default function Timelines() {
         ))}
       </TabsHeader>
       
-      <TabsBody >
+      <TabsBody animate={{
+          initial: { y: 0 },
+          mount: { "0%":{y:-250},
+                    "50%":{y:-150},
+                  "100%":{y:-100} },
+          unmount: { y: -250 },
+        }}>
         {data.map(({ value, desc }) => (
           <TabPanel key={value} value={value}>
             {desc }
