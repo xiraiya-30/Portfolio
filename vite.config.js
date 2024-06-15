@@ -9,5 +9,7 @@ export default defineConfig({
   server:{
     host:true,
     open:'/index.html',
-  }
+  },
+  assetsInclude: ['**/*.ttf', '**/*.otf', '**/*.woff', '**/*.woff2'], // Add other font formats if necessary
+  
 })
