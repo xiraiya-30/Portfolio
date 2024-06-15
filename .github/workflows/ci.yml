@@ -34,5 +34,6 @@ jobs:
         VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
         VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        CI: 'true'
     
 
