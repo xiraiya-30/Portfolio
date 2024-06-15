@@ -5,6 +5,7 @@ import emailjs from 'emailjs-com';
 import { CgClose } from 'react-icons/cg';
 import { TbMessageHeart } from 'react-icons/tb';
 
+
 const service_id = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const template_id = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const public_id = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
@@ -81,8 +82,8 @@ const Contact = () => {
             <input
               name="user_name"
               value={details.user_name}
-              onChange={handleChange}
-              className="!border-t-blue-gray-200 focus:!border-t-gray-900 text-black w-full h-12 p-3 rounded-xl bg-gray-200 bg-opacity-50"
+              onChange={handleChange} 
+              className="!border-t-blue-gray-200 focus:!border-t-gray-900 text-black w-full h-12 p-3 rounded-xl bg-gray-200 bg-opacity-50 hover:scale-105 focus:scale-100"
             />
           </div>
           <div>
@@ -91,7 +92,7 @@ const Contact = () => {
               name="user_email"
               value={details.user_email}
               onChange={handleChange}
-              className="!border-t-blue-gray-200 focus:!border-t-gray-900 text-black w-full h-12 p-3 rounded-xl bg-gray-200 bg-opacity-50"
+              className="!border-t-blue-gray-200 focus:!border-t-gray-900 text-black w-full h-12 p-3 rounded-xl bg-gray-200 bg-opacity-50 hover:scale-105 focus:scale-100"
             />
           </div>
           <div>
@@ -99,10 +100,11 @@ const Contact = () => {
             <input
               type="tel"
               name="user_mobile"
+              prefix='+91 '
               value={details.user_mobile}
               onChange={handleChange}
               maxLength={10}
-              className="!border-t-blue-gray-200 focus:!border-t-gray-900 placeholder-gray-800 text-black w-full h-12 p-3 rounded-xl bg-gray-200 bg-opacity-50"
+              className="!border-t-blue-gray-200 focus:!border-t-gray-900 placeholder-gray-800 text-black w-full h-12 p-3 rounded-xl bg-gray-200 bg-opacity-50 hover:scale-105 focus:scale-100"
             />
           </div>
           <div>
@@ -111,7 +113,7 @@ const Contact = () => {
               name="message"
               value={details.message}
               onChange={handleChange}
-              className="h-24 !border-t-blue-gray-200 focus:!border-t-gray-900 text-wrap rounded-xl w-full p-3 bg-gray-200 bg-opacity-50 text-black"
+              className="h-24 !border-t-blue-gray-200 focus:!border-t-gray-900 text-wrap rounded-xl w-full p-3 bg-gray-200 bg-opacity-50 text-black hover:scale-105 focus:scale-100"
             />
           </div>
         </div>
