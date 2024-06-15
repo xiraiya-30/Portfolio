@@ -8,18 +8,5 @@ export default defineConfig({
   server: {
     host: true,
     open: '/index.html',
-  },
-  build: {
-    assetsInlineLimit: 0, // Ensure all assets are included as separate files
-    rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'index.html'),
-      },
-    },
-  },
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
-    },
-  },
+  }
 });

@@ -34,12 +34,4 @@ jobs:
         VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
         VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
     
-    - name: Deploy to GitHub Pages
-      run: npm run deploy
-      env:
-          CI: 'true'  # Ensure CI environment variable is set to 'true' for gh-pages
-    
-    - name: Clean up
-      run: npm run clean
-    
 
