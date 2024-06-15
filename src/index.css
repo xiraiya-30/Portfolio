@@ -3,13 +3,17 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Nothing-47";
-    src: url(".\fonts\nothing-font-47.ttf");
-  }
+  font-family: 'Nothing Font 47';
+  src: url('../fonts/nothing-font-47.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-  font-family: "Nothing-45";
-  src: url(".\fonts\nothing-font-45.ttf");
+  font-family: 'Nothing Font 45';
+  src: url('../fonts/nothing-font-45.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
