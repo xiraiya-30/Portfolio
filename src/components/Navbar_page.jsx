@@ -12,6 +12,7 @@ import About from "../pages/About";
 import Skills from '../pages/Skills';
 import Timelines from '../pages/Timelines';
 import Contact from '../pages/Contact';
+import Projects from '../pages/Projects';
 
 export function currentTab (tabname) {
   const tab=tabname
@@ -38,7 +39,7 @@ function Navbar_page() {
     {
       label: "Projects",
       value: "projects",
-      component: <About />,
+      component: <Projects />,
     },
     {
       label: "Contact",
