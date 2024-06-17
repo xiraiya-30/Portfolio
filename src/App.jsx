@@ -2,6 +2,7 @@ import { useState,useEffect } from 'react'
 import React from 'react';
 import { Loading } from './components/simple components';
 import Navbar_page from './components/Navbar_page';
+import Projects from './pages/Projects';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,3 +26,11 @@ function App() {
 }
 
 export default App
+
+      
+      
+        
+        
+      
+
+      

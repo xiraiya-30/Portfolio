@@ -29,9 +29,13 @@ module.exports = withMT({
         'pop-left': 'pop-left 1.3s ease-out',
         'wiggle': 'wiggle 3s infinite', 
         'flip-hide':'flip-hide 2s forwards', 
-        'flip-show':'flip-show 2s forwards'
+        'flip-show':'flip-show 2s forwards',
+        
       },
       keyframes: {
+
+        
+
         'flip-hide' : {
           '0%': { transform: 'rotateY(0)',opacity:'1' },
           '50%': { transform: 'rotateY(-90deg)', display: 'none',opacity:'0' },
