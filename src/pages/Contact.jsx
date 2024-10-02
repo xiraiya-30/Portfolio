@@ -28,7 +28,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send(service_id, template_id, details)
+    emailjs.send(service_id, template_id, details,public_id)
       .then(() => {
         setMsgSent(true);
         setLoading(false);
