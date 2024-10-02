@@ -33,7 +33,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send(service_id, template_id, details,public_id)
+    emailjs.send(service_id, template_id, details)
       .then(() => {
         setMsgSent(true);
         setLoading(false);
