@@ -32,15 +32,25 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setLoading(true);
-
-    emailjs.send(service_id, template_id, details, public_id)
+  
+    const emailDetails = {
+      from_name: details.user_name,
+      from_email: details.user_email,
+      from_mobile: details.user_mobile,
+      message: details.message,
+    };
+  
+    console.log("Sending email with details:", emailDetails);
+  
+    emailjs.send(service_id, template_id, emailDetails, public_id)
       .then(() => {
         setMsgSent(true);
         setLoading(false);
         formRef.current.reset();
         setDetails({ user_name: '', user_email: '', user_mobile: '', message: '' });
       })
-      .catch(() => {
+      .catch((error) => {
+        console.error("Failed to send email:", error);
         setLoading(false);
       });
   };
