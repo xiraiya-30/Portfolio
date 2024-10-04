@@ -10,7 +10,7 @@ const openLink = (source) => {
 }
 
 const downloadResume = () => {
-    const resumeUrl = `${process.env.PUBLIC_URL}/resume.pdf`; // Updated path
+    const resumeUrl = `./resume.pdf`; // Updated path
     window.open(resumeUrl, '_blank');
 }
 export default function About() {
