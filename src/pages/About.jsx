@@ -10,10 +10,9 @@ const openLink = (source) => {
 }
 
 const downloadResume = () => {
-    const resumeUrl = "/Portfolio/src/assets/resume.pdf"; // Replace with actual resume path
+    const resumeUrl = `${process.env.PUBLIC_URL}/resume.pdf`; // Updated path
     window.open(resumeUrl, '_blank');
 }
-
 export default function About() {
     return (
         <div className="flex justify-center items-center px-6 md:px-20 h-auto md:h-screen bg-deep-orange-600">
