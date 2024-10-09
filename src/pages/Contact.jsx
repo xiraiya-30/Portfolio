@@ -9,10 +9,6 @@ const template_id = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const public_id = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 
-console.log('Service ID:', service_id);
-console.log('Template ID:', template_id);
-console.log('Public Key:', public_id);
-
 const Contact = () => {
   const [details, setDetails] = useState({
     user_name: '',
