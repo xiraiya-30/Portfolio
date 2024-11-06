@@ -74,7 +74,7 @@ const education_data = [
         institution: 'Nandha Engineering College',
         course: 'B.Tech - Artificial Intelligence and Data Science',
         year: 'OCT 2021 - MAY 2025',
-        percentage: '7.3 CGPA'
+        percentage: '7.2 CGPA'
     },
     {
       institution: 'Navarasam Matriculation Higher Secondary School',
@@ -93,8 +93,8 @@ const education_data = [
 const work_data = [
     {
         company: 'iGrad Labs',
-        jobrole: 'Machine Learrning Engineer - intern',
-        duraion: 'MAR 2024 - PRESENT',
+        jobrole: 'Machine Learning Engineer - intern',
+        duraion: 'OCT 2024 - PRESENT',
     },
     
     

@@ -12,22 +12,22 @@ export default function Projects() {
 
     const proj = [
         {
+            name: 'RAG Chatbot for Websites',
+            img: proj_avatar,
+            description: 'Build an intelligent chat bot leveraging RAG and language models for better responses.',
+            link: 'https://github.com/xiraiya-30/Nec-Chatbot'
+        },
+        {
+            name: 'API Driven IoT using NodeMcu',
+            img: proj_avatar,
+            description: 'An API based Home Automation system using NodeMcu.',
+            link: 'https://github.com/xiraiya-30/Node-Mcu-API-based-IoT-MicroPython'
+        },
+        {
             name: 'Bluetooth based attendance system',
             img: proj_avatar,
             description: 'Easily mark attendance using Python and Bluetooth tech to scan nearby devices.',
-            link: 'https://www.github.com'
-        },
-        {
-            name: 'Chat bot using Gemini API',
-            img: proj_avatar,
-            description: 'Create a smart chat bot with Gemini API to handle queries effortlessly.',
-            link: 'https://www.github.com'
-        },
-        {
-            name: 'Chat bot using RAG & LLM',
-            img: proj_avatar,
-            description: 'Build an intelligent chat bot leveraging RAG and language models for better responses.',
-            link: 'https://www.github.com'
+            link: 'https://github.com/xiraiya-30/Bluetooth-Based-Attendance-System'
         },
     ];
 

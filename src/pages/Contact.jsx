@@ -46,10 +46,16 @@ const Contact = () => {
       
       <div className="text-center top-8">
         <h2 className="lg:text-4xl text-2xl font-black p-3 text-black">CONTACT</h2>
-        <p className="font-gray-800 mb-4 text-lg text-black">Message me!</p>
+        <div className='flex border-2 border-black p-2 rounded-lg'>
+        <p className='px-2 font-black text-black'>MAIL ME at : </p>
+        <a href= "mailto: srivarsen30@gmail.com" className=' text-black underline'> srivarsen30@gmail.com </a>
+        </div>
+        <p className='text-black'>(OR)</p>
       </div>
       <div className="w-4/5 flex justify-center mt-4">
         <div className="bg-white bg-opacity-15 backdrop-blur-md w-full max-w-md shadow-xl shadow-black p-5 pt-2 rounded-2xl border-2 border-black">
+        <p className="font-gray-800 mb-4 text-lg text-center text-black">Message me!</p>
+
           <form ref={formRef} onSubmit={sendEmail} className="w-full h-fit">
             <div className="mb-1 flex flex-col">
               <div>
